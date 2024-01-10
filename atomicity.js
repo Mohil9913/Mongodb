@@ -7,6 +7,8 @@
         define the transaction [optional]
         define sequence of operations to perform inside an transaction
         release all resources
+
+        Note : a transaction should be completed within 60 seconds, and will close any resources that are being used for that time. [ISOLATION]
 */
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
